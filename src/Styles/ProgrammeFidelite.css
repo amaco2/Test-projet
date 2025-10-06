@@ -1,0 +1,401 @@
+   .fidelite {
+       background-color: #fff;
+       width: 95%;
+       margin-left: -25px;
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+   }
+
+   /* Réduction */
+
+   .jojo-fidelite {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       padding-top: 30px;
+       margin-top: 70px;
+       margin-left: -80px;
+   }
+
+   .jojo-fidelite p {
+       font-family: fantasy;
+       font-size: 1.3em;
+       width: 40vw;
+       color: #262424b4;
+   }
+
+   .jojo-fidelite .reduction--fidelite-p {
+       /* text-align: center; */
+       background-color: orange;
+       width: 250px;
+       font-size: 1.5em;
+       height: 40px;
+       font-family: serif;
+       padding-top: 3px;
+       margin-left: -20px;
+       border-radius: 5px;
+       color: #000;
+   }
+
+   .jojo-fidelite h2 {
+       font-size: 2.8em;
+       font-weight: bolder;
+       margin-top: 30px;
+   }
+
+   .jojo-fidelite h2 span {
+       color: #b81c1c;
+   }
+
+   .reduction__div--reduct {
+       width: 90%;
+       height: 300px;
+       border: 1px solid rgba(230, 162, 162, 0.633);
+       margin-top: 50px;
+       margin-left: 50px;
+       border-radius: 20px;
+       padding: 1rem;
+   }
+
+   .reduction__div--reduct .div--reduct-bronze {
+       display: flex;
+       justify-content: space-around;
+       margin-top: 40px;
+   }
+
+   .div--reduct-bronze .star {
+       font-size: 1.2em;
+       font-weight: bold;
+   }
+
+   .div--reduct-bronze .star span {
+       color: #3b363698;
+   }
+
+   .div--reduct-bronze .flex-5 {
+       width: 180px;
+       height: 30px;
+       background-color: #327732;
+       color: #fff;
+       padding-top: 5px;
+       padding-left: 10px;
+       font-weight: bolder;
+       margin-left: -20px;
+       border-radius: 5px;
+   }
+
+   @property --font-wiegth {
+       syntax: 'font';
+       inherits: false;
+       initial-value: bolder;
+       font-weight: bolder;
+   }
+
+   .reduction__div--reduct .div--reduct-progression {
+       display: flex;
+       justify-content: space-between;
+       margin-top: 50px;
+       margin-left: -19px;
+       font-size: 1em;
+   }
+
+   .div-reduct-progressbar {
+       width: 95%;
+       height: 10px;
+       border-radius: 5px;
+       margin-left: 20px;
+       margin-top: 20px;
+       background-color: rgba(220, 179, 179, 0.61);
+   }
+
+   .div-reduct-progressbar .reduct-progressbar--gb-color {
+       width: 50%;
+       background-color: rgb(176, 53, 53);
+       height: 10px;
+       border-top-left-radius: 5px;
+       border-bottom-left-radius: 5px;
+   }
+
+   /* Offres */
+
+   .fidelite .offre {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       width: 95%;
+       gap: 30px 30px;
+       margin-left: 40px;
+       margin-top: 60px;
+   }
+
+   .fidelite .offre div {
+       width: 300px;
+       height: 350px;
+       border-radius: 20px;
+       padding: 1rem;
+       gap: 20px;
+       transition: .3s ease-in-out;
+       cursor: pointer;
+   }
+       .fidelite .offre div:hover{
+          box-shadow: 1px 1px 20px #312f2f78;
+          opacity: 0.9;
+       }
+       .fidelite .offre div ul li{
+       list-style-type: "✔  ";
+       }
+   /* Offre bronze */
+   .fidelite .offre .offre__bronze {
+       border: 1px solid rgb(36, 134, 36);
+       background-color: rgba(185, 232, 232, 0.6);
+   }
+
+   .fidelite .offre .offre__bronze p {
+       margin-left: -5px;
+       text-align: center;
+   }
+
+   .fidelite .offre .offre__bronze ul {
+       padding-left: 1.4rem;
+       margin-top: 50px;
+   }
+
+   .fidelite .offre .offre__bronze ul li {
+       padding-top: 10px;
+   }
+
+   .fidelite .offre .offre__bronze .span-bronze {
+       display: inline-block;
+       width: 70px;
+       height: 25px;
+       color: #fff;
+       font-size: 16px;
+       border-radius: 10px;
+       padding: 6px;
+       background-color: #327732;
+       border: 1px solid blue;
+   }
+
+   /* Offre d'argent */
+   .fidelite .offre .offre__argent {
+       border: 1px solid orange;
+       background-color: rgba(241, 226, 199, 0.818);
+   }
+
+   .fidelite .offre .offre__argent p {
+       margin-left: -5px;
+       text-align: center;
+   }
+
+   .fidelite .offre .offre__argent ul {
+       padding-left: 1.4rem;
+       margin-top: 50px;
+   }
+
+   .fidelite .offre .offre__argent ul li {
+       padding-top: 10px;
+   }
+
+   .fidelite .offre .offre__argent span {
+       display: inline-block;
+       width: 70px;
+       height: 28px;
+       color: #000;
+       font-size: 20px;
+       border-radius: 10px;
+       padding: 4px;
+       font-weight: bolder;
+       border: 1px solid orangered;
+       background-color: orange;
+   }
+
+   /* Offre or */
+
+   .fidelite .offre .offre__or {
+       background-color: #f0e0e0;
+       border: 1px solid rgba(35, 33, 33, 0.748);
+   }
+
+   .fidelite .offre .offre__or p {
+       margin-left: -5px;
+       text-align: center;
+   }
+
+   .fidelite .offre .offre__or ul {
+       padding-left: 1.4rem;
+       margin-top: 50px;
+   }
+
+   .fidelite .offre .offre__or ul li {
+       padding-top: 10px;
+   }
+
+   /* Fonctionnement offre */
+
+   .fidelite .fonctionnement-section-parent {
+       margin-left: 50px;
+       margin-top: 80px;
+       width: 90%;
+       min-height: 50%;
+       border: 1px solid #cae2ca;
+       border-radius: 20px;
+       background-color: #d4ecec;
+   }
+
+   .fidelite .fonctionnement-section-parent h2 {
+       text-align: center;
+       margin-top: 30px;
+   }
+
+   .fidelite .fonctionnement-children {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       text-align: center;
+       margin-top: 50px;
+       padding-top: 20px;
+
+   }
+
+   .fidelite .fonctionnement-children .commandez .grid1 {
+       width: 50px;
+       height: 50px;
+       border-radius: 100px;
+       color: #fff;
+       font-size: 15px;
+       font-weight: bolder;
+       margin-left: 10.5vw;
+       padding: 1.1rem;
+       background-color: #b81c1c;
+   }
+
+   .fidelite .fonctionnement-children .cumulez .grid2 {
+       width: 50px;
+       height: 50px;
+       border-radius: 100px;
+       color: #fff;
+       font-size: 15px;
+       padding: 1.1rem;
+       margin-left: 10.5vw;
+       font-weight: bolder;
+       background-color: #247824;
+   }
+
+   .fidelite .fonctionnement-children .economisez .grid3 {
+       width: 50px;
+       margin-left: 10.5vw;
+       height: 50px;
+       border-radius: 100px;
+       color: #000;
+       font-size: 15px;
+       padding: 1.1rem;
+       background-color: #f3a109;
+       font-weight: bolder;
+   }
+
+   .rejointre-programm {
+       margin-top: 80px;
+       position: relative;
+       left: 38%;
+       background-color: #b81c1c;
+       color: #fff;
+       cursor: pointer;
+       width: 300px;
+       border-radius: 13px;
+       height: 50px;
+       text-align: center;
+       font-size: 1.3em;
+       font-weight: bolder;
+       border: none;
+       transition: background 0.5s ease-in-out;
+   }
+
+   .rejointre-programm:hover {
+       background-color: #327732;
+   }
+
+   /* Responsive Design */
+
+   @media (max-width: 1200px) {
+       .fidelite .offre {
+           grid-template-columns: repeat(2, 1fr);
+       }
+
+       .fidelite .fonctionnement-children {
+           grid-template-columns: repeat(2, 1fr);
+       }
+   }
+
+   @media (max-width: 900px) {
+       .fidelite .offre {
+           grid-template-columns: 1fr;
+           margin-left: 20px;
+       }
+
+       .fidelite .offre div {
+           width: 100%;
+           max-width: 300px;
+           margin: 0 auto;
+       }
+
+       .fidelite .fonctionnement-children {
+           grid-template-columns: 1fr;
+       }
+
+       .reduction__div--reduct {
+           margin-left: 20px;
+       }
+
+       .fidelite .fonctionnement-section-parent {
+           margin-left: 20px;
+       }
+   }
+
+   @media (max-width: 600px) {
+       .jojo-fidelite h2 {
+           font-size: 2em;
+       }
+
+       .jojo-fidelite p {
+           font-size: 1.1em;
+       }
+
+       .rejointre-programm {
+           width: 250px;
+           font-size: 1.1em;
+           left: 30%;
+       }
+
+       /* .fidelite .offre div {
+           height: 200px;
+       } */
+   }
+
+   @media (max-width: 550px) {
+       .jojo-fidelite h2 {
+           font-size: 1.5em;
+       }
+
+       .jojo-fidelite .reduction--fidelite-p {
+           width: 200px;
+           font-size: 1.2em;
+       }
+
+       .rejointre-programm {
+           width: 200px;
+           font-size: 1em;
+           left: 30%;
+       }
+
+       .fidelite .offre div {
+           /* height: 180px; */
+           padding: 0.5rem;
+       }
+
+       /* .reduction__div--reduct {
+           height: 250px;
+       } */
+
+       .fidelite {
+           margin-left: -10px;
+       }
+   }

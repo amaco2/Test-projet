@@ -1,0 +1,280 @@
+:root {
+    --grid-div-number: 420px;
+    --size-div-grid: 400px;
+    --grid-repeat-count: 3;
+    --bg-color-grid-div: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-intro-prod {
+    width: 50vw;
+    /* background-color: #cdf0f4; */
+    margin-top: 150px;
+    margin-left: 25vw;
+    text-align: center;
+    min-height: 200px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.text-intro-prod .text-prod {
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 900;
+    margin-left: 250px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.text-intro-prod h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.text-intro-prod span {
+    color: #d71919;
+}
+
+.text-intro-prod p {
+    font-size: 22px;
+    color: #2321219f;
+    width: 35vw;
+    position: relative;
+    left: 70px;
+}
+
+.Product-phares {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-repeat-count), var(--grid-div-number));
+    column-gap: 0px;
+    row-gap: 30px;
+    padding-bottom: 60px;
+}
+.items-produit{
+    width: 99vw;
+    height: 130%;
+    background-color: #e9f1f9; 
+    margin-top: 50px;
+    margin-left: -135px;
+}
+.Product-phares .div-produit .bg-img-product {
+    width: var(--size-div-grid);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.Product-phares .div-produit .bg-img-product:hover {
+    cursor: pointer;
+    background-size: 500px;
+}
+
+.Product-phares .div-produit {
+    border-radius: 20px;
+    width: var(--size-div-grid);
+    min-height: 470px;
+    background-color: var(--bg-color-grid-div);
+    margin-top: 50px;
+    margin-left: 58px;
+    font-weight: bold;
+}
+
+.Product-phares .div-produit:hover {
+    box-shadow: 1px 1px 40px #27262692;
+}
+
+.Product-phares .div-produit .categorie {
+    background-color: rgb(0, 94, 128);
+    border-radius: 5px;
+    width: 120px;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.Product-phares .div-produit .categorie span {
+    display: inline-block;
+    color: #fff;
+    margin: .5rem .4rem;
+}
+
+.Product-phares .div-produit .flex-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Product-phares .div-produit .star {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.Product-phares .div-produit .nom {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.Product-phares .div-produit .prix {
+    margin-top: 6px;
+    color: red;
+    position: relative;
+    /* left: 200px; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Product-phares .div-produit .prix span {
+    text-decoration: line-through;
+    color: #18171760;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.Product-phares .div-produit .description {
+    width: 300px;
+    font-size: 17px;
+    color: #22212196;
+}
+
+.Product-phares .div-produit .btn-ajout-pannier {
+    width: 300px;
+    height: 35px;
+    border: none;
+    background-color: #298b29;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 1.1em;
+    position: relative;
+    top: 50px;
+}
+
+.btn-voir-tous {
+    width: 250px;
+    height: 38px;
+    font-size: 1.1em;
+    font-weight: 800;
+    border: 1px solid #c72929;
+    background-color: #fff;
+    color: #a03434;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    /* top: 20px; */
+    left: 41%;
+    top: -20px;
+}
+
+.btn-voir-tous:hover {
+    background-color: #c72929;
+    color: #fff;
+}
+
+/* ...code existant... */
+
+/* Responsive pour tablettes */
+@media (max-width: 1024px) {
+    :root {
+        --grid-repeat-count: 2;
+        --size-div-grid: 320px;
+    }
+    .text-intro-prod {
+        width: 80vw;
+        margin-left: 5vw;
+    }
+    .text-intro-prod .text-prod {
+        margin-left: 0;
+    }
+    .Product-phares {
+        width: 100vw;
+        margin-left: 0;
+        gap: 20px;
+    }
+    .Product-phares .div-produit {
+        margin-left: 11vw;
+    }
+    .Product-phares .div-produit .description,
+    .Product-phares .div-produit .btn-ajout-pannier {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .btn-voir-tous {
+        left: 35.5%;
+    }
+    .items-produit{
+        width: 103.7vw;
+    }
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 730px) {
+    :root {
+        --grid-repeat-count: 1;
+        --size-div-grid: 95vw;
+    }
+    .items-produit{
+        margin-left: -10vw;
+        width: 97.1vw;
+    }
+    .text-intro-prod {
+        width: 98vw;
+        margin-left: 1vw;
+        padding: 10px 0;
+    }
+    .text-intro-prod .text-prod {
+        margin-left: 0;
+        width: 80vw;
+    }
+    .text-intro-prod p {
+        width: 90vw;
+        left: 0;
+        font-size: 18px;
+    }
+    .Product-phares {
+        width: 100vw;
+        margin-left: 0;
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+    .Product-phares .div-produit {
+        width: 95vw;
+        min-height: 400px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .Product-phares .div-produit .bg-img-product {
+        width: 100%;
+        height: 160px;
+    }
+    .Product-phares .div-produit .bg-img-product:hover{
+        background-size: 780px;
+    }
+    .Product-phares .div-produit .description,
+    .Product-phares .div-produit .btn-ajout-pannier {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .btn-voir-tous {
+        left: 0;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+}
+@media screen and (max-width: 420px) {
+    .Product-phares .div-produit .btn-ajout-pannier{
+        top: 30px;
+    }
+}
